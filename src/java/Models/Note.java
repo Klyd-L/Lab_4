@@ -13,36 +13,35 @@ import java.io.Serializable;
  */
 public class Note implements Serializable
 {
-    private String view;
-    private String edit;
-
-    public Note() 
+    private String title;
+    private String content;
+    
+    public Note()
     {
-        view = "";
-        edit = "";
-    }
-    
-    
-
-    public Note(String view, String edit) {
-        this.view = view;
-        this.edit = edit;
+        title = "";
+        content = "";
     }
 
-    public String getView() {
-        return view;
+    public Note(String title, String content) 
+    {
+        this.title = title;
+        this.content = content;
     }
 
-    public String getEdit() {
-        return edit;
+    public String getTitle() {
+        return title;
     }
 
-    public void setView(String view) {
-        this.view = view;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public void setEdit(String edit) {
-        this.edit = edit;
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String contents) {
+        this.content = contents;
     }
     
     
